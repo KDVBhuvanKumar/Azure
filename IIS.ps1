@@ -1,5 +1,5 @@
 # Install IIS.
-dism /online /enable-feature /featurename:IIS-WebServerRole
+Install-WindowsFeature -name Web-Server -IncludeManagementTools
 
 # Set the home page.
 Set-Content `
